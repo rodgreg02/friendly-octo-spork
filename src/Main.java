@@ -12,7 +12,7 @@ public class Main {
                     String string = "*";
                     for (int i = 0; i < rows; i++) {
                         System.out.println(string);
-                        string = string + "*";
+                        string = string + " * ";
                     }
                     break;
                 case 2:
