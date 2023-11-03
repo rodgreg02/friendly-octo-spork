@@ -47,6 +47,36 @@ public class Main {
                         System.out.println();
                     }
                     break;
+                case 5:
+                    int counter1 = 20;
+                    int counter2 = 1;
+                    for (int i1 = 0; i1 < 10; i1++) {
+                        System.out.println();
+                        for (int i2 = 0; i2 < counter1; i2++) {
+                            System.out.print(" ");
+                        }
+                        counter1 -= 2;
+                        for (int i3 = 0; i3 < counter2; i3++) {
+                            System.out.print("X ");
+                        }
+                        counter2++;
+                    }
+                    break;
+                case 6:
+                    int counter3 = 1;
+                    int counter4 = 10;
+                    for (int i1 = 0; i1 < 10; i1++) {
+                        System.out.println();
+                        for (int i2 = 0; i2 < counter3; i2++) {
+                            System.out.print(" ");
+                        }
+                        counter3 += 2;
+                        for (int i3 = 0; i3 < counter4; i3++) {
+                            System.out.print("X ");
+                        }
+                        counter4--;
+                    }
+                    break;
                 case 9:
                     int[][] matrixNumb = new int[13][13];
                     for (int i = 0; i < 13; i++) {
@@ -63,7 +93,7 @@ public class Main {
                         System.out.println("");
                         for (int j = 0; j < 13; j++) {
                             System.out.print(matrixNumb[i][j]);
-                            if(matrixNumb[i][j] >= 10 && matrixNumb[i][j] < 100){
+                            if (matrixNumb[i][j] >= 10 && matrixNumb[i][j] < 100) {
                                 System.out.print(" ");
                             } else if (matrixNumb[i][j] <= 9) {
                                 System.out.print("  ");
