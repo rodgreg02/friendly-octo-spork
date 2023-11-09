@@ -77,6 +77,22 @@ public class Main {
                         counter4--;
                     }
                     break;
+                case 7:
+                    int size = 11;
+
+                    for (int i = 0; i < size; i++) {
+                        for (int j = 0; j < size; j++) {
+
+                            if (i == 0 || i == size - 1 || j == 0 || j == size - 1 || i == j || i + j == size - 1) {
+                                System.out.print("X ");
+                            } else {
+                                System.out.print("  ");
+                            }
+                        }
+                        System.out.println();
+                    }
+                    break;
+
                 case 9:
                     int[][] matrixNumb = new int[13][13];
                     for (int i = 0; i < 13; i++) {
