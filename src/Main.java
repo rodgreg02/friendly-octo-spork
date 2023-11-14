@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("1)left side\n2)left side upsidedown\n3)twosided\n4)twosided upsidedown\n9)Multiplication table\n0) quit");
         Scanner input = new Scanner(System.in);
         int rows = 10;
         boolean quit = false;
@@ -92,7 +91,26 @@ public class Main {
                         System.out.println();
                     }
                     break;
-
+                case 8:
+                    int counter10=1;
+                    int counter20=5;
+                    int counter30=5;
+                    for(int i=0;i<5;i++){
+                        System.out.println();
+                        if(counter30==1 || counter30==5){
+                            for(int i1=counter20;i1>=counter10;i1--){
+                                System.out.print("X ");
+                            }
+                        }else{
+                            System.out.print("X");
+                            for(int i1=0; i1<7;i1++){
+                                System.out.print(" ");
+                            }
+                            System.out.print("X");
+                        }
+                        counter30--;
+                    }
+                    break;
                 case 9:
                     int[][] matrixNumb = new int[13][13];
                     for (int i = 0; i < 13; i++) {
@@ -116,6 +134,22 @@ public class Main {
                             }
                             System.out.print("|");
                         }
+                    }
+                    break;
+                case 10:
+                    int counter=0;
+                    for(int i1=0;i1<8;i1++){
+                        System.out.println();
+                        for(int i2=0;i2<8;i2++){
+                            if(counter%2==0){
+                                System.out.print("X ");
+                                counter--;
+                            }else{
+                                System.out.print("O ");
+                                counter++;
+                            }
+                        }
+                        counter+=1;
                     }
                     break;
                 case 0:
